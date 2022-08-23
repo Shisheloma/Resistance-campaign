@@ -1,0 +1,26 @@
+@import "./Partials/evil";
+@import "./Partials/grinder";
+@import "./Partials/keyframes";
+
+.evil-section { 
+    // wolf position
+    height: 605vh;
+    position: relative;  
+    z-index: 1;
+    
+    &_container {
+        // start of grinder camera roll down
+        height: 700vh; 
+        // God, burn Safari
+        overflow: clip;
+        position: relative; 
+    }
+
+    &_sticky {
+        // start of sticky camera roll
+        height: 370vh;
+        position: sticky;
+        // end of sticky camera roll - s/b in sync with head landing
+        top: -220vh;    
+    }
+}  

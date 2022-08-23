@@ -1,0 +1,62 @@
+
+@keyframes flick {
+    0% {
+    }
+    25% {
+        background-color: rgba(148, 148, 148, 0.856);  
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0.856); 
+    }
+    75% {            
+        background-color: rgba(148, 148, 148, 0.856);  
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.856);  
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotate(0); 
+    }
+    100% {
+        transform: rotate(-360deg); 
+    }
+}
+
+@keyframes fail {
+    0% {
+        transform: rotate(0); 
+    }
+    25% {
+        transform: rotate(20deg); 
+    }
+    50% {
+        transform: rotate(0); 
+    }
+    75% {
+        transform: rotate(20deg); 
+    }
+    100% {
+        transform: rotate(0); 
+    }
+}
+
+@keyframes fail_ccw {
+    0% {
+        transform: rotate(0); 
+    }
+    25% {
+        transform: rotate(-10deg); 
+    }
+    50% {
+        transform: rotate(0); 
+    }
+    75% {
+        transform: rotate(-10deg); 
+    }
+    100% {
+        transform: rotate(0); 
+    }
+}

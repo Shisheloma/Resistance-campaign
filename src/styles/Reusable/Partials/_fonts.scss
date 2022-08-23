@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Helvetica-Bold-Oblique';
+    src: url('../../assets/Fonts/Helvetica/helvetica_boldoblique-webfont.woff2') format('woff2'),
+         url('../../assets/Fonts/Helvetica/helvetica_boldoblique-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica-Black';
+    src: url('../../assets/Fonts/Helvetica/Helvetica_BlackItalic.woff2') format("woff2"),
+         url('../../assets/Fonts/Helvetica/Helvetica_BlackItalic.ttf') format("truetype"); 
+    font-display: swap;
+    }
+
+@font-face {
+    font-family: 'Helvetica-Black-Cyrillic';
+    src: url( '../../assets/Fonts/Helvetica/Helvetica_cyrillic.woff2') format("woff2"),
+         url('../../assets/Fonts/Helvetica/Helvetica_cyrillic.ttf') format("truetype"); 
+    font-display: swap;
+    }
+
+@font-face {
+    font-family: 'Birthstone';  
+    src: url('../../assets/Fonts/birthstone-v10-latin-regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caudex';  
+    src: url('../../assets/Fonts/caudex-italic-webfont.woff2') format('woff2'),
+         url('../../assets/Fonts/caudex-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caudex';   
+    src: url('../../assets/Fonts/caudex-bolditalic-webfont.woff2') format('woff2'),
+         url('../../assets/Fonts/caudex-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';  
+    src: url('../../assets/Fonts/Outfit-Regular.ttf') format('truetype');
+    font-display: swap;
+} 
+
+@import url('https://fonts.cdnfonts.com/css/times-new-roman');

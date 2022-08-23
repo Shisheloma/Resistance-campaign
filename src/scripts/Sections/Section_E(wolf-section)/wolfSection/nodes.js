@@ -1,0 +1,12 @@
+export const container = document.querySelector('.wolf-section');  
+export const wolf = document.querySelector('.wolf');  
+export const strokeInput = document.querySelector('.wolf_stroke_input');   
+export const strokeInputLine = document.querySelector('.wolf_stroke_line_input');
+export const strokeOutput = document.querySelector('.wolf_stroke_output');   
+export const evilContainer = document.querySelector('.wolf_evil');   
+export const evil = document.querySelector('.wolf_evil_item');   
+export const panties = document.querySelector('.wolf_panties');   
+export const textLeft = document.querySelector('.wolf_text_left');   
+export const textRight = document.querySelector('.wolf_text_right');   
+export const textBottom = document.querySelector('.wolf_text_bottom');   
+export const egg = document.querySelector('.egg_bg');   

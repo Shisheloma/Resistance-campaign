@@ -1,0 +1,89 @@
+// right slide stones
+@keyframes stones_one {
+    from {
+        transform: rotate(10deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes stones_two {
+    from {
+        transform: rotate(5deg);
+    }
+    to {
+        transform: rotate(-5deg);
+    }
+}
+
+// right slide cats
+@keyframes cats_balance {
+    from {
+        transform: rotate(7deg);
+    }
+    to {
+        transform: rotate(-12deg);
+    }
+}
+
+@keyframes cats_antibalance {
+    from {
+        transform: rotate(-28deg);
+    }
+    to {
+        transform: rotate(48deg);
+    }
+}
+
+@keyframes cats_orbit {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg); 
+    }
+}
+
+@keyframes cats_orbit_half {
+    from {
+        transform: rotate(-140deg);
+    }
+    to {
+        transform: rotate(40deg); 
+    }
+}
+
+// right slide space
+@keyframes space_road {
+    from {
+        transform: translateX(-5px) rotate(1deg) scale(1.04, 1.033);
+    } 
+    to {
+        transform: translateX(5px) rotate(-1deg) scale(1.04, 1.033);
+    }
+}
+
+@keyframes space_road_flick {
+    0%, 50% {
+        opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+    52% { 
+        opacity: 1;
+    }
+    55%, 69% {
+        opacity: 0; 
+    }
+    79%, 100% {
+        opacity: 1; 
+    }
+}
+
+// ticker
+@keyframes ticker_scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}

@@ -1,0 +1,17 @@
+@import "./keyframes";
+
+.news_modal_window.content_01 {    
+    .news_modal_window_body {
+        &_image_item { 
+            &_01 {
+                background: url("../../assets/Common/birdman_bottom.webp") no-repeat center/contain; 
+            }
+            
+            &_02 {
+                transform-origin: 30% 46%;
+                background: url("../../assets/Common/birdman_top.webp") no-repeat center/contain;  
+                animation: birdman 1200ms infinite alternate;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.top-section {
+    .left {
+        width: 50%;
+        display: flex;
+        
+        &_cover {
+            position: relative;  
+            height: 100%; 
+            width: 62vh; 
+
+            &_background { 
+                height: 100%;
+                width: auto;
+            }
+
+            &_title {
+                position: absolute;
+                display: flex; 
+                height: 15%;
+                width: 82%;
+                top: 1%; 
+                left: 6%;
+
+                &_logo { 
+                    height: 95%;
+                    width: auto;
+                    align-self: end;
+                    object-fit: contain; 
+                    cursor: pointer;
+                }
+
+                &_text { 
+                    align-self: center;
+                    padding-left: 15px;
+                    color: rgb(50, 50, 50);
+                    font-size: 3.2vh;
+                    font-family: Caudex;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &_message {
+            justify-self: end;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            font-size: 4.2vh; 
+            font-family: Outfit;  
+            text-align: center;
+            
+            &_title {
+                width: 116%;
+                transform: translateX(-8%);   
+                text-shadow:#000 0px 0px 5px,   
+                            #000 0px 0px 5px,   
+                            #000 0px 0px 5px,   
+                            #000 0px 0px 5px,   
+                            #000 0px 0px 5px;
+                -webkit-font-smoothing: antialiased;
+                margin: 0 auto; 
+                padding-top: 3.1vh; 
+                z-index: 1;
+
+                &::selection {
+                    text-shadow: none;  
+                }
+            }
+
+            &_subtitle {
+                height: 100%;
+
+                &_slider {
+                    margin: auto; 
+
+                    &_text {
+                        margin: auto; 
+                        padding: 10px 0;
+                        display: block;
+                        writing-mode: vertical-rl;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    } 
+}

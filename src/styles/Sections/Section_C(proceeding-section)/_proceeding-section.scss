@@ -1,0 +1,24 @@
+.proceeding-section {
+    height: 135vh;
+    position: relative; 
+    overflow: clip;
+    z-index: -1;
+    
+    &_container {
+        position: relative;
+        height: 230vh; 
+    }
+
+    &_sticky {
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        display: grid;
+        place-content: center;
+
+        .text{ 
+            font-size: MIN(7vw, 90px);
+            text-align: center; 
+        }
+    } 
+}

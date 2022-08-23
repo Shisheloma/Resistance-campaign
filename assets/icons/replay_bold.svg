@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:26;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:23;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:7;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1">
+	<g>
+		<circle class="st0" cx="65.7" cy="282.1" r="0.1"/>
+		<circle class="st0" cx="78.4" cy="326.6" r="0.1"/>
+		<circle class="st0" cx="101.6" cy="366" r="0.1"/>
+		<circle class="st0" cx="133.7" cy="398.7" r="0.1"/>
+		<circle class="st0" cx="173.4" cy="423.2" r="0.1"/>
+		<circle class="st0" cx="219.2" cy="437.8" r="0.1"/>
+		<circle class="st0" cx="267.7" cy="441" r="0.1"/>
+		<circle class="st0" cx="314" cy="433" r="0.1"/>
+		<circle class="st0" cx="356.5" cy="414.6" r="0.1"/>
+		<circle class="st0" cx="393.1" cy="387.2" r="0.1"/>
+		<circle class="st0" cx="422.3" cy="351.7" r="0.1"/>
+		<circle class="st0" cx="442.1" cy="309.1" r="0.1"/>
+		<circle class="st0" cx="450.4" cy="262.7" r="0.1"/>
+		<circle class="st0" cx="446.6" cy="217.1" r="0.1"/>
+		<circle class="st0" cx="431.6" cy="174.1" r="0.1"/>
+		<circle class="st0" cx="406" cy="135.7" r="0.1"/>
+		<circle class="st0" cx="370.9" cy="104.1" r="0.1"/>
+		<circle class="st0" cx="328" cy="81.5" r="0.1"/>
+		<circle class="st0" cx="282.2" cy="70.3" r="0.1"/>
+		<circle class="st0" cx="235.8" cy="70" r="0.1"/>
+		<circle class="st0" cx="190.8" cy="80.3" r="0.1"/>
+		<circle class="st0" cx="149.4" cy="100.7" r="0.1"/>
+	</g>
+	<path class="st1" d="M84.3,106.9c71.6-83.7,192.9-104,288-48.4S508.8,229.9,471,333.4s-144.4,164.9-252.9,146
+		c-108.5-18.9-187.9-112.8-188.5-223"/>
+</g>
+<g id="Layer_2">
+	<path class="st2" d="M97.5,108.2l38.9,33.6L16.3,185.5c10.8-43.2,21.1-84.6,31.9-128C59.6,69.9,70,81.2,80.9,93.1L97.5,108.2z"/>
+</g>
+</svg>

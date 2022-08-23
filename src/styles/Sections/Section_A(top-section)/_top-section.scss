@@ -1,0 +1,83 @@
+@import './partials/left';
+@import './partials/right/right';
+@import './partials/nav_side';
+@import './partials/ticker';
+@import './partials/autoscroll_play';
+@import './partials/keyframes';
+
+.top-section { 
+    display: flex;
+    position: relative;
+    height: 100vh;
+    padding: 0 4vh;
+    background-color: rgb(20, 20, 20);  
+    overflow-anchor: none; 
+
+
+    @include ratio-custom('179/100') {
+        .autoscroll_play {
+            top: 11vh; 
+        }
+
+        .left_message_title {
+            pointer-events: none;
+            transform: translateX(calc(-8% - 1vw));    
+        }
+    }
+
+    @include ratio-mid {
+        .wide {
+            display: none;
+        }
+
+        .left {
+            width: 20%; 
+
+            &_message_title { 
+                width: 100%;
+                transform: none;   
+                padding-inline: 1vh;
+            }
+        }
+
+        .right {
+            width: 80%; 
+        }
+        
+        .autoscroll_play {
+            left: calc(20% + 2vh);
+        }
+    }
+
+    @include ratio-small {
+        .wide {
+            display: none;
+        }
+
+        .left {            
+            display: none; 
+        }
+
+        .right {
+            width: 100%; 
+            &_slide_narrow-subtitle {
+                visibility: visible;
+            }
+        }
+        
+        .autoscroll_play { 
+            display: none; 
+        }
+    }
+
+    @include ratio-xsmall {
+        padding: 0;
+
+        .nav_side {
+            display: none;
+        }
+        .ticker {
+            width: 91vw;
+        }
+    } 
+}

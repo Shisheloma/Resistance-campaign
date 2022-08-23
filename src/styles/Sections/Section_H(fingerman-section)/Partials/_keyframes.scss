@@ -1,0 +1,90 @@
+// fingerman 
+@keyframes fingerman {
+    0% {
+        opacity: 0; 
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+// puller
+@keyframes puller_1 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes puller_2 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes puller_3 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes puller_1_alt {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes puller_2_alt {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes puller_3_alt {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 0;
+    }
+}

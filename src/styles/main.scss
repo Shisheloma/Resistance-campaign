@@ -1,0 +1,43 @@
+@import "normalize.css";
+@import url("~@splidejs/splide/dist/css/splide.min.css");
+
+@import "./Reusable/reusable";
+@import "./Common/escape";
+@import "./Common/nav-modal";
+@import "./Common/News-modal/news-modal";
+@import "./Common/Taskbar/taskbar";
+@import "./Common/Poppper/popper";
+@import "./Sections/Section_A\(top-section\)/top-section";
+@import "./Sections/Section_B\(mission-section\)/mission-section";
+@import "./Sections/Section_C\(proceeding-section\)/proceeding-section";
+@import "./Sections/Section_D\(evil-section\)/evil-section";
+@import "./Sections/Section_E\(wolf-section\)/wolf-section";
+@import "./Sections/Section_F\(egg-section\)/egg-section";
+@import "./Sections/Section_G\(sponsors-section\)/sponsors-section";
+@import "./Sections/Section_H\(fingerman-section\)/fingerman-section";
+@import "./Utils/pivot";
+
+:root {
+    color-scheme: light dark;
+  }
+  
+* {
+    box-sizing: border-box;
+} 
+ 
+body {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-x: clip;
+    background-color: rgb(20, 20, 20);   
+    color: rgb(233, 233, 233);
+    font-family: 'Times New Roman', sans-serif;
+    text-transform: uppercase;
+	scroll-behavior: smooth;
+    
+    ::selection {
+        background-color: rgb(110, 211, 197);   
+        color: red; 
+    }
+} 

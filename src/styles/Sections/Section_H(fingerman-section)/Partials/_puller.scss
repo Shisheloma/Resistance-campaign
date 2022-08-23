@@ -1,0 +1,51 @@
+.fingerman-section { 
+    .puller { 
+        position: absolute; 
+        height: 26vh;
+        top: -22vh;
+        left: -12.5vh; 
+        transform-origin: 6% 79%;
+        transform: translate(50vw, 50vh) rotate(7deg);
+        transition: opacity 1s 200ms linear;
+        // pointer-events cancel for touchscreens
+        pointer-events: none;
+        
+        &.faded {
+            opacity: 0;
+        }
+
+        &_item {
+            position: absolute;   
+            height: 100%;
+        }
+
+        &_frame { 
+            &_1 {
+                opacity: 1;
+                animation: puller_1_alt 200ms both; 
+
+                &.close {
+                    animation: puller_1 200ms both;  
+                } 
+            }
+            
+            &_2 {
+                opacity: 0;
+                animation: puller_2_alt 200ms both; 
+
+                &.close {
+                    animation: puller_2 200ms both;  
+                } 
+            }
+            
+            &_3 {
+                opacity: 0;
+                animation: puller_3_alt 200ms both; 
+                
+                &.close {
+                    animation: puller_3 200ms both;
+                } 
+            } 
+        }
+    }
+}

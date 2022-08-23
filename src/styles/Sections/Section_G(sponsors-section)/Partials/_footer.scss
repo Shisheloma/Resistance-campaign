@@ -1,0 +1,41 @@
+.sponsors-section {
+    .sponsors {
+        &_footer { 
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+            overflow: clip;
+            display: flex;
+            justify-content: end;
+
+            &_item { 
+                padding: 0 2vh;
+                font-family: Outfit;  
+                font-size: 1.8vh; 
+                line-height: 4vh;
+                text-align: center;
+                text-decoration: none;
+                color: rgb(240, 240, 240);
+                background-color: rgb(13, 13, 13);
+                transform-origin: 50% 30%;
+                cursor: pointer;
+
+                &:hover { 
+                    transform: scale(1.12); 
+                    background-color: rgb(4, 24, 21); 
+                    color: rgb(238, 230, 230);
+                }
+
+                &:nth-of-type(2n) {
+                    background-color: rgb(167, 162, 151);
+                    color: black;
+
+                    &:hover {
+                        background-color: rgb(187, 181, 169); 
+                    }
+                }
+            }
+        }
+    }
+}

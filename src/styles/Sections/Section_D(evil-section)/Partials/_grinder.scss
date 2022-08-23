@@ -1,0 +1,118 @@
+.evil-section_sticky { 
+    .grinder { 
+        height: 90vh;
+        width: 75.4vh;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-59.8%);
+        bottom: 0;  
+
+        &_front {
+            z-index: 2;
+        }
+
+        &_item { 
+            position: absolute;  
+            height: 100%;
+            width: 100%;
+        }
+
+        &_lever {
+            transform-origin: 20% 32.2%; 
+            // turns out Safari can't handle proper scale animation timing - so special animation for it
+            // what a piece of work
+            animation: zIndex1 4s infinite;
+            @supports(overflow: clip) {
+                animation:  lever 2s infinite alternate,
+                            zIndex1 4s infinite;
+            } 
+
+            &::after {
+                content: "";
+                transform-origin: 20% 32.2%; 
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: url("../../assets/Sections/Evil-section/grinder_lever.webp") no-repeat center/contain;
+                // turns out Safari can't handle proper scale animation timing - so special animation for it
+                // what a piece of work
+                animation: rotateSafari 4s infinite;
+                @supports(overflow: clip) {
+                    animation: lever2 4s infinite;
+                } 
+            }
+        }
+
+        &_handle { 
+            transform-origin: 20% 32.2%; 
+            // turns out Safari can't handle proper scale animation timing - so special animation for it
+            // what a piece of work
+            animation:  rotateSafari 4s infinite,
+                        zIndex2 4s infinite;
+            @supports(overflow: clip) { 
+                animation:  handle 4s infinite,
+                            zIndex2 4s infinite; 
+            } 
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: url("../../assets/Sections/Evil-section/grinder_handle.webp") no-repeat center/contain;
+                transform-origin: 26.5% 77%;  
+                // turns out Safari can't handle proper scale animation timing - so special animation for it
+                // what a piece of work 
+                animation: handle2Safari 4s infinite; 
+                @supports(overflow: clip) { 
+                    animation: handle2 4s infinite;  
+                } 
+            } 
+        }
+ 
+        &_body { 
+            background: url("../../assets/Sections/Evil-section/grinder_body.webp") no-repeat center/contain;
+        }
+
+        &_body_back { 
+            background: url("../../assets/Sections/Evil-section/grinder_body_back.webp") no-repeat center/contain;
+        }
+
+        &_feeder { 
+            background: url("../../assets/Sections/Evil-section/grinder_feeder.webp") no-repeat center/contain; 
+        }
+
+        &_liquid { 
+            background: url("../../assets/Sections/Evil-section/grinder_liquid.webp") no-repeat center/contain;
+            opacity: 0;
+                
+            &_active {
+                opacity: 1;
+                transition: opacity 500ms; 
+            }
+        } 
+        
+        &_log { 
+            background: url("../../assets/Sections/Evil-section/grinder_log.webp") no-repeat center/contain;
+            opacity: 0;
+                
+            &_active {
+                opacity: 1;
+                transition: opacity 100ms; 
+            }
+        }
+
+        &_stroke {
+            position: absolute; 
+            height: 100%;
+            top: 0; 
+            left: 59.8%;
+            transform: translateX(-50%);
+    
+            &_line {
+                stroke: #ffc5c4; 
+                stroke-width: 0.045vh; 
+            }
+        }
+    }
+}

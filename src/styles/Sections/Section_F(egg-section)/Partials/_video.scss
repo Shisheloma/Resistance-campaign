@@ -1,0 +1,59 @@
+.egg-section { 
+    .egg {
+        &_bg {
+            position: absolute;
+            height: 60vh;
+            top: 50%;
+            left: 50%;
+            margin-top: 0.5vh;
+            transform: translate(-50%, -50%);
+            fill: #fccdc3; 
+            opacity: 1;
+
+            &.hidden {
+                opacity: 0;
+            }
+        }
+
+        &_video {  
+            position: relative;
+            height: 60vh;
+            width: 44vh;
+            overflow: hidden; 
+            overflow: clip; 
+            margin-top: 1vh;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; 
+            // helps with border-radius glitch:
+            transform-style: preserve-3d; 
+            backface-visibility: hidden; 
+            touch-action: none; 
+            -webkit-tap-highlight-color: transparent;
+
+            &_button,
+            &_slider,
+            &_slider_label,
+            &_gauge {
+                opacity: 0; 
+                transition: opacity 200ms ease-out;
+            }
+
+            &:hover,
+            &.ended { 
+                .egg_video_button,
+                .egg_video_slider,
+                .egg_video_slider_label,
+                .egg_video_gauge {
+                    opacity: 1;  
+                }
+            }
+            
+            &_element {
+                position: relative;            
+                top: 50%;
+                left: 50%;
+                height: 77vh;  
+                transform: translate(-50%, -50%);  
+            }
+        }
+    }
+}

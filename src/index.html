@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+        <link rel="manifest" href="./manifest.json">
+        <meta name="theme-color" content="#141414">
+        <!-- favicons start -->
+        <link rel="shortcut icon" href="./favicons/favicon.ico">
+        <link rel="icon" sizes="16x16 32x32 64x64" href="./favicons/favicon.ico">
+        <link rel="icon" type="image/png" sizes="196x196" href="./favicons/favicon-192.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="./favicons/favicon-160.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="./favicons/favicon-64.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16.png">
+        <link rel="apple-touch-icon" href="./favicons/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./favicons/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./favicons/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./favicons/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./favicons/favicon-60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./favicons/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./favicons/favicon-76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./favicons/favicon-152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicons/favicon-180.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="./favicons/favicon-144.png">
+        <meta name="msapplication-config" content="./favicons/browserconfig.xml">
+        <!-- favicons end -->   
+        <meta name="description" content="Les enfants sont grognons">
+        <title>Resistance campaign</title>
+    </head>
+    <body> 
+<!-- Nav modal -->
+        <div class="nav_logo">  
+            <img class="nav_logo_item lazy" data-src="../assets/Common/nav.webp" alt="nav"> 
+        </div>
+
+        <nav class="nav_modal"> 
+            <div class="nav_modal_body">
+                <h3 class="nav_modal_body_title"> Resistance campaign</h3>
+                <ul class="nav_modal_body_list">
+                    <li class="nav_modal_body_list_item">text</li>
+                    <li class="nav_modal_body_list_item">another text</li>
+                    <li class="nav_modal_body_list_item">more text</li>
+                    <li class="nav_modal_body_list_item">still text</li>
+                    <li class="nav_modal_body_list_item">text again</li>
+                </ul>
+                <ul class="nav_modal_body_footer">
+                    <li class="nav_modal_body_footer_item">text</li>
+                    <li class="nav_modal_body_footer_item">another text</li>
+                    <li class="nav_modal_body_footer_item">more text</li>
+                    <li class="nav_modal_body_footer_item">still text</li>
+                    <li class="nav_modal_body_footer_item">text again</li>
+                </ul>
+            </div>
+            <img class="nav_modal_logo nav_modal_logo_a lazy" data-src="../assets/Common/nav.webp" alt="nav"> 
+            <img class="nav_modal_logo nav_modal_logo_b lazy" data-src="../assets/Common/nav.webp" alt="nav"> 
+        </nav>
+
+<!-- News modal -->
+        <section class="news_modal">  
+            <div class="news_modal_overlay"></div>  
+        </section>
+
+        <template id="news_modal_content_01">
+            <div class="news_modal_window content_01">
+                <div class="news_modal_window_close"></div>  
+                <h3 class="news_modal_window_title"> Last month achievement </h3>
+                <div class="news_modal_window_body"> 
+                    <div class="news_modal_window_body_image"> 
+                        <div 
+                            class="news_modal_window_body_image_item news_modal_window_body_image_item_01 lazy" 
+                            data-background-image="../assets/Common/birdman_bottom.webp"> 
+                        </div>
+                        <div 
+                            class="news_modal_window_body_image_item news_modal_window_body_image_item_02 lazy" 
+                            data-background-image="../assets/Common/birdman_top.webp"> 
+                        </div> 
+                    </div>
+                    <p class="news_modal_window_body_text"> 
+                        Last month 1037 glass bottles have been acquired by our members across city dumpsters.
+                        <br><br>
+                        Collected materials have been transferred to glass recycling facilities.
+                        <br><br>
+                        Funds raised by this activity are planned to be invested in purchase of 120 glass bottles required for incendiary projectiles manufacturing as preparation for upcoming peaceful protests. 
+                        <br><br>
+                        We will prevail!
+                    </p>
+                </div>
+            </div> 
+        </template>
+
+<!-- Popper -->
+        <div class="popper"> 
+            <div class="popper_image">
+                <p class="popper_text popper_text_first"> 
+                    Where you goin?
+                    <br>
+                    Gimme job
+                </p>
+                <a class="popper_text popper_text_mail"
+                    href="mailto:shisheloma@gmail.com "> 
+                    shisheloma@gmail.com 
+                </a>
+                <p class="popper_text popper_text_copied">   
+                </p>
+            </div>
+        </div>
+
+        <main> 
+<!-- Taskbar -->
+            <div class="taskbar">
+                <div class="taskbar_container">
+                    <button class="taskbar_button taskbar_button_play" aria-label="start autoscroll"></button>
+                    <span class="taskbar_speed" value="0.5">✗0.5</span>
+                    <span class="taskbar_speed" value="0.75">✗0.75</span>
+                    <span class="taskbar_speed active" value="1">✗1</span>
+                    <span class="taskbar_speed" value="1.5">✗1.5</span>
+                    <span class="taskbar_speed" value="2">✗2</span>
+                    <button class="taskbar_button taskbar_button_top" aria-label="scroll to top"></button> 
+                    <button class="taskbar_button taskbar_button_video taskbar_button_video_play" aria-label="play-pause video"> </button>
+                    <button class="taskbar_button taskbar_button_video taskbar_button_video_mute" aria-label="mute video"> </button>
+                    <button class="taskbar_button taskbar_button_video taskbar_button_video_center" aria-label="scroll to video"> </button>
+                </div>
+            </div>
+            
+<!-- Section A -->
+            <section class="top-section">
+                <div class="left">
+                    <div class="left_cover wide"> 
+                        <img class="left_cover_background" src="../assets/Sections/Top-section/header_left.webp" alt="our mission"> 
+                        <div class="left_cover_title">    
+                            <img class="left_cover_title_logo" src="../assets/Sections/Top-section/fist.webp" alt="logo">  
+                            <span class="left_cover_title_text">our mission is to save all the lesbians</span>
+                        </div>
+                    </div>
+                    <div class="left_message">      
+                        <span  class="left_message_title"> support our mission </span>
+                        <div class="left_message_subtitle"> 
+                            <div class="left_message_subtitle_slider splide" aria-label="Steps to succeed slideshow">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide left_message_subtitle_slider_text">
+                                            <span> KEEP THE BALANCe</span>
+                                        </li> 
+                                        <li class="splide__slide left_message_subtitle_slider_text">
+                                            SAVE THOSE PUSSIES
+                                        </li> 
+                                        <li class="splide__slide left_message_subtitle_slider_text">
+                                            AND WE WILL PREVAIL
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+
+                <div class="right splide" aria-label="Steps to succeed slideshow">
+                    <div class="right_track splide__track">
+                        <ul class="splide__list"> 
+                            <li class="right_slide splide__slide">
+                                <span class="right_slide_narrow-subtitle">
+                                    KEEP THE BALANCE
+                                </span> 
+                                <div class="right_slide_item right_slide_item_stones_bg"> </div>
+                                <div class="right_slide_item right_slide_item_stones_animate right_slide_item_stones_a"> <span class="pivot"></span>
+                                    <div class="right_slide_item right_slide_item_stones_animate right_slide_item_stones_b"> 
+                                        <div class="right_slide_item right_slide_item_stones_animate right_slide_item_stones_c"> 
+                                            <div class="right_slide_item right_slide_item_stones_animate right_slide_item_stones_d"> 
+                                                <div class="right_slide_item right_slide_item_stones_animate right_slide_item_stones_e">  </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </li> 
+                            <li class="right_slide splide__slide">
+                                <span class="right_slide_narrow-subtitle shadow"> 
+                                    SAVE THOSE PUSSIES
+                                </span> 
+                                <div class="right_slide_item right_slide_item_cats_bg"> </div>                                        
+                                <div class="right_slide_item right_slide_item_cats_1"> 
+                                    <div class="right_slide_item right_slide_item_cats_animate right_slide_item_cats_2">
+                                        <div class="right_slide_item right_slide_item_cats_animate right_slide_item_cats_3"> 
+                                            <div class="right_slide_item right_slide_item_cats_animate right_slide_item_cats_4"> 
+                                                <div class="right_slide_item right_slide_item_cats_animate right_slide_item_cats_5"> 
+                                                    <div class="right_slide_item_cats_5_orbital">
+                                                        <div class="right_slide_item_cats_5_orbital_antibalance">
+                                                            <div class="right_slide_item right_slide_item_cats_5_orbital_antibalance_a"> </div>
+                                                            <div class="right_slide_item right_slide_item_cats_5_orbital_antibalance_b"> </div>
+                                                            <div class="right_slide_item right_slide_item_cats_5_orbital_antibalance_c"> </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </li> 
+                            <li class="right_slide splide__slide"> 
+                                <span class="right_slide_narrow-subtitle"> 
+                                     AND WE WILL PREVAIL
+                                </span> 
+                                <div class="right_slide_item right_slide_item_space_bg"> </div>
+                                <div class="right_slide_item right_slide_item_space_cats right_slide_item_space_cats_a"> </div>
+                                <div class="right_slide_item right_slide_item_space_cats right_slide_item_space_cats_b"> </div>
+                                <div class="right_slide_item right_slide_item_space_cats right_slide_item_space_cats_c"> </div>
+                                <div class="right_slide_item right_slide_item_space_cats right_slide_item_space_cats_d"> </div>
+                                <div class="right_slide_item right_slide_item_space_flowers"> </div>
+                                <div class="right_slide_item right_slide_item_space_road"> </div>
+                                <div class="right_slide_item right_slide_item_space_car"> </div>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+
+                <template id="zero_slide_main">
+                    <li class="right_slide splide__slide zero_slide_main">
+                        <div class="zero_cover left_cover"> 
+                            <div class="zero_cover_background"> 
+                                <div class="zero_cover_title left_cover_title">
+                                    <img class="zero_cover_title_logo left_cover_title_logo" src="../assets/Sections/Top-section/fist.webp" alt="logo">  
+                                    <span class="zero_cover_title_text left_cover_title_text">our mission is to save all the lesbians</span>
+                                </div> 
+                        </div>
+                    </li>
+                </template>
+                
+                <template id="zero_slide_text">
+                <li class="splide__slide left_message_subtitle_slider_text zero_slide_text">
+                    <span> hear the voice </span>
+                </li> 
+            </template>
+
+                <div class="autoscroll_play"> </div>
+                
+                <div class="ticker"> 
+                    <ul class="ticker_scroll">
+                        <li class="ticker_scroll_item" data-content="01"> 01 - Lorem ipsum dolor sit amet consectetur - 01 </li>
+                        <li class="ticker_scroll_item" data-content="01"> 02 - adipisicing elit. Quod ratione ab aliquid quos officiis - 02 </li>
+                        <li class="ticker_scroll_item" data-content="01"> 03 - mnis rem itaque ea, molestias error perspiciatis ducimus - 03 </li>
+                        <li class="ticker_scroll_item" data-content="01"> 04 - odeleniti nisi illo quas voluptatum voluptatem quisquam fugiat - 04 </li>
+                         
+                    </ul>
+                </div>
+                
+                <nav class="nav_side nav_side_left">
+                    <span class="nav_side_item" data-popper-position="left bottom">
+                        manifesto
+                    </span>   
+                    <span class="nav_side_item" data-popper-position="left top">
+                        stories
+                    </span>
+                </nav>
+                <nav class="nav_side nav_side_right">
+                    <span class="nav_side_item" data-popper-position="right top">
+                        about
+                    </span>   
+                    <span class="nav_side_item" data-popper-position="right bottom">
+                        contacts
+                    </span>
+                </nav>
+            </section>  
+                
+<!-- Section B -->
+            <section class="mission-section">
+                <div class="mission-section_sticky"> 
+                    <div class="intro"> 
+                        <div class="intro_head"></div>
+                        <div class="intro_text">  
+                            <h3 class="intro_text_title">Who we are </h3> 
+                            <p class="intro_text_body"> 
+                                Resistance Movement  is the soil of anarchist, globalist, moralist, anti-evil and anti-authoritarian initiatives.
+                                <br>
+                                <br>
+                                We believe that planet Earth* and all Eastern, Western, Asian and American Europe should be free from dictatorship, totalitarianism and all life manifestations we found, specify and consider as evil. Freedom, solidarity and equality should become the main principles of the social, classial, conscious and  unconscious organization of life.
+                                <br>
+                                <br>
+                                Our task: to unite efforts of fighters against all mentioned above for the sake of effective struggle for our ideals and values. We aspire to influence the future of our movement and the whole humanity, to protect the freedoms which already exist and to contribute to their extension.
+                                <br>
+                                <br> 
+                            </p>
+                            <div class="intro_text_footer">
+                                *underwater included 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                        
+<!-- Section C -->
+            <section class="proceeding-section">
+                <div class="proceeding-section_container">
+                    <div class="proceeding-section_sticky"> 
+                        <h2 class="text">
+                            to the point - 
+                            <br>
+                            easy steps to succeed
+                        </h2>
+                    </div>
+                </div>
+            </section>
+                        
+<!-- Section D -->
+            <section class="evil-section">
+                <div class="evil-section_container">
+                    <div class="evil-section_sticky">
+                        <div class="grinder grinder_front">  
+                            <div 
+                                class="grinder_item grinder_feeder lazy" 
+                                data-background-image="../assets/Sections/Evil-section/grinder_feeder.webp"> 
+                            </div>
+                        </div>
+                        <div class="evil">  
+                            <div class="evil_container">
+                                <img data-src="../assets/Sections/Evil-section/evil_space.webp" alt="evil" class="evil_image evil_space lazy">
+                                <img data-src="../assets/Sections/Evil-section/evil_red.webp" alt="evil" class="evil_image evil_red lazy">
+                                <img data-src="../assets/Sections/Evil-section/evil.webp" alt="evil" class="evil_image evil_back lazy">
+                                <img data-src="../assets/Sections/Evil-section/evil_ryoba.webp" alt="saw" class="evil_image evil_saw lazy"> 
+                                <img data-src="../assets/Sections/Evil-section/evil_head.webp" alt="evil" class="evil_image evil_head lazy"> 
+                            </div>
+                        </div>
+                         
+                        <div class="grinder">  
+                            <svg class="grinder_stroke" viewBox="0 0 10 100" preserveAspectratio="xMidYMid meet">
+                                <line class="grinder_stroke_line" x1="5" x2="5" y1="40" y2="40" />
+                            </svg>  
+                            <div class="grinder_item grinder_handle"> </div>
+                            <div class="grinder_item grinder_lever"> </div> 
+                            <div 
+                                class="grinder_item grinder_body_back lazy" 
+                                data-background-image="../assets/Sections/Evil-section/grinder_body_back.webp"> 
+                            </div>     
+                            <div 
+                                class="grinder_item grinder_log lazy" 
+                                data-background-image="../assets/Sections/Evil-section/grinder_log.webp"> 
+                            </div>   
+                            <div 
+                                class="grinder_item grinder_body lazy" 
+                                data-background-image="../assets/Sections/Evil-section/grinder_body.webp"> 
+                            </div>   
+                            <div 
+                                class="grinder_item grinder_liquid lazy" 
+                                data-background-image="../assets/Sections/Evil-section/grinder_liquid.webp"> 
+                            </div>   
+                        </div>
+                    </div> 
+                </div>
+            </section>  
+           
+<!-- Section E -->
+            <section class="wolf-section">
+                <div class="wolf-section_container"> 
+                    <div class="wolf-section_sticky wolf hidden">
+                        <svg class="wolf_stroke wolf_stroke_input" viewBox="0 0 10 100" preserveAspectratio="xMidYMid meet">
+                            <line class="wolf_stroke_line wolf_stroke_line_input" x1="5" x2="5" y1="100" y2="100" />
+                        </svg> 
+                        <svg class="wolf_stroke wolf_stroke_output" viewBox="0 0 10 100" preserveAspectratio="xMidYMid meet">
+                            <line class="wolf_stroke_line" x1="5" x2="5" y1="0" y2="80" />
+                        </svg> 
+                        <div class="wolf_item wolf_text wolf_text_bottom"> 
+                            <div class="wolf_text_bottom_left"> incubate </div> 
+                            <div class="wolf_text_bottom_right"> new meanings </div>  
+                        </div>
+                        <div class="wolf_item wolf_main wolf_text"> 
+                            <div class="wolf_text_left"> embrace </div> 
+                            <div class="wolf_text_right"> feminity</div>  
+                        </div>
+                        <div class="wolf_item wolf_evil">
+                            <div 
+                                class="wolf_evil_item lazy" 
+                                data-background-image="../assets/Sections/Wolf-section/wolf_evil.webp"> 
+                            </div>
+                        </div>
+                        <div 
+                            class="wolf_item wolf_frame_left lazy" 
+                            data-background-image="../assets/Sections/Wolf-section/wolf_frame_left.webp"> 
+                        </div>
+                        <div 
+                            class="wolf_item wolf_frame_right lazy" 
+                            data-background-image="../assets/Sections/Wolf-section/wolf_frame_right.webp"> 
+                        </div>
+                        <div 
+                            class="wolf_item wolf_panties lazy" 
+                            data-background-image="../assets/Sections/Wolf-section/wolf_panties.webp"> 
+                        </div>
+                        <div 
+                            class="wolf_item wolf_dress lazy" 
+                            data-background-image="../assets/Sections/Wolf-section/wolf_dress.webp"> 
+                        </div>  
+                    </div>
+                </div>
+            </section> 
+                        
+<!-- Section F -->
+            <section class="egg-section">  
+                <div class="egg-section_container"> 
+                    <div class="egg-section_sticky egg"> 
+                        <svg class="egg_bg" version="1.1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 512 695" style="enable-background:new 0 0 512 695;" xml:space="preserve">
+                            <path id="eggPath" d="M508,411.8C498.6,81.3,306.7-65.3,158.9,35.6C38.1,118.1-13.7,336.8,7.6,463.9c25,148.6,156,257.9,307.9,218.8
+                            C439.1,651,511.2,526.6,508,411.8z"/> 
+                        </svg>
+                        <div class="egg_video">    
+                            <video class="egg_video_element" >
+                                <source src="../assets/video/let_go.mp4" type="video/mp4">
+                            </video> 
+                            <ul class="egg_video_gauge egg_video_gauge_left"> </ul>
+                            <ul class="egg_video_gauge egg_video_gauge_right"> </ul> 
+                            <button class="egg_video_button egg_video_play" aria-label="play-pause video"> </button>
+                            <button class="egg_video_button egg_video_mute" aria-label="mute video"> </button>
+                            <input class="egg_video_slider egg_video_scroll" id="vid_scroll" type="range">
+                            <input class="egg_video_slider egg_video_volume" id="vid_vol" type="range">
+                            <label class="egg_video_slider_label egg_video_scroll_label" for="vid_scroll">
+                                00:00
+                            </label>
+                            <label class="egg_video_slider_label egg_video_volume_label" for="vid_vol">
+                                0%
+                            </label>
+                        </div>
+                        <div class="escape egg_escape">
+                            and we will escape over an acre of linoleum
+                        </div>    
+                    </div>
+                </div> 
+            </section>  
+                        
+<!-- Section G -->
+            <section class="sponsors-section"> 
+                <div class="escape sponsors_escape">
+                    and we will escape over an acre of linoleum
+                </div> 
+                <div class="sponsors_body"> 
+                    <div class="sponsors_body_header"> 
+                        <h3 class="sponsors_body_header_title">our sponsors</h3> 
+                        <span class="sponsors_body_header_wonder">look at these ghouls...</span>
+                    </div> 
+                    <ul class="sponsors_body_faces"> 
+                        <li class="sponsors_body_faces_item">
+                            <div class="sponsors_body_faces_item_container"> 
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_front">
+                                    <img 
+                                        class="sponsors_body_faces_item_front_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_1_front.webp" 
+                                        alt="sponsor">
+                                </div>
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_back">
+                                    <img 
+                                        class="sponsors_body_faces_item_back_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_1_back.webp" 
+                                        alt="sponsor">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sponsors_body_faces_item">
+                            <div class="sponsors_body_faces_item_container">
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_front">
+                                    <img 
+                                        class="sponsors_body_faces_item_front_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_2_front.webp" 
+                                        alt="sponsor">
+                                </div>
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_back">
+                                    <img 
+                                        class="sponsors_body_faces_item_back_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_2_back.webp" 
+                                        alt="sponsor">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sponsors_body_faces_item">
+                            <div class="sponsors_body_faces_item_container">
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_front">
+                                    <img 
+                                        class="sponsors_body_faces_item_front_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_3_front.webp" 
+                                        alt="sponsor">
+                                </div>
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_back">
+                                    <img 
+                                        class="sponsors_body_faces_item_back_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_3_back.webp" 
+                                        alt="sponsor">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sponsors_body_faces_item">
+                            <div class="sponsors_body_faces_item_container">
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_front">
+                                    <img 
+                                        class="sponsors_body_faces_item_front_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_4_front.webp" 
+                                        alt="sponsor">
+                                </div>
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_back">
+                                    <img 
+                                        class="sponsors_body_faces_item_back_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_4_back.webp" 
+                                        alt="sponsor">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sponsors_body_faces_item">
+                            <div class="sponsors_body_faces_item_container">
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_front">
+                                    <img 
+                                        class="sponsors_body_faces_item_front_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_5_front.webp" 
+                                        alt="sponsor">
+                                </div>
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_back">
+                                    <img 
+                                        class="sponsors_body_faces_item_back_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_5_back.webp" 
+                                        alt="sponsor">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sponsors_body_faces_item">
+                            <div class="sponsors_body_faces_item_container">
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_front">
+                                    <img 
+                                        class="sponsors_body_faces_item_front_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_6_front.webp" 
+                                        alt="sponsor">
+                                </div>
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_back">
+                                    <img 
+                                        class="sponsors_body_faces_item_back_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_6_back.webp" 
+                                        alt="sponsor">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sponsors_body_faces_item">
+                            <div class="sponsors_body_faces_item_container">
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_front">
+                                    <img 
+                                        class="sponsors_body_faces_item_front_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_7_front.webp" 
+                                        alt="sponsor">
+                                </div>
+                                <div class="sponsors_body_faces_item_side sponsors_body_faces_item_back">
+                                    <img 
+                                        class="sponsors_body_faces_item_back_image_a sponsors_body_faces_item_image lazy" 
+                                        data-src="../assets/Sections/Sponsors-section/sponsor_7_back.webp" 
+                                        alt="sponsor">
+                                </div>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="sponsors_footer"> 
+                    <a class="sponsors_footer_item" href="#">faq</a>
+                    <a class="sponsors_footer_item" href="#">media</a>
+                    <a class="sponsors_footer_item" href="#">sponsors</a>
+                    <a class="sponsors_footer_item" href="#">contact us</a>
+                </div>
+            </section>    
+                                    
+<!-- Section H -->
+            <footer class="fingerman-section">
+                <div class="fingerman">
+                    <div 
+                        class="fingerman_item fingerman_item_1 lazy" 
+                        data-background-image="../assets/Sections/Fingerman-section/fingerman.webp">
+                    </div>
+                    <div 
+                        class="fingerman_item fingerman_item_2 lazy" 
+                        data-background-image="../assets/Sections/Fingerman-section/fingerman_smile_1.webp">
+                    </div>
+                    <div 
+                        class="fingerman_item fingerman_item_3 lazy" 
+                        data-background-image="../assets/Sections/Fingerman-section/fingerman_smile_2.webp">
+                    </div> 
+                    <div 
+                        class="fingerman_text"> hey! <br> pull my finger</div>
+                </div>
+                <div class="puller"> 
+                    <img 
+                        class="puller_item puller_main lazy" 
+                        data-src="../assets/Sections/Fingerman-section/puller.webp" 
+                        alt="puller">
+                    <img 
+                        class="puller_item puller_frame_1 lazy" 
+                        data-src="../assets/Sections/Fingerman-section/puller_frame_1.webp" 
+                        alt="puller">
+                    <img 
+                        class="puller_item puller_frame_2 lazy" 
+                        data-src="../assets/Sections/Fingerman-section/puller_frame_2.webp" 
+                        alt="puller">
+                    <img 
+                        class="puller_item puller_frame_3 lazy" 
+                        data-src="../assets/Sections/Fingerman-section/puller_frame_3.webp" 
+                        alt="puller"> 
+                </div>
+            </footer> 
+            
+        </main>
+    </body>
+</html>

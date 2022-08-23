@@ -1,0 +1,11 @@
+.egg-section { 
+    .egg {
+        &_escape {  
+            bottom: -5vh; 
+            transform: translateY(80%);
+            transition: opacity 700ms; 
+        }
+    }
+}
+
+// see shared escape styles in Common folder

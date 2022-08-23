@@ -1,0 +1,41 @@
+.top-section {
+    .ticker {
+        position: absolute;
+        width: 85vw; 
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        z-index: 9;
+
+        color: rgb(211, 211, 211);
+        background-color: rgba($color: #000000, $alpha: 0.7);
+
+        &_scroll {
+            display: inline-flex;
+            margin: 0;
+            padding: 5px 0;
+            
+            list-style: none;
+            white-space: nowrap;
+            animation: ticker_scroll calc(4s * 4) linear infinite; 
+
+            &:hover {
+                animation-play-state: paused;
+            }
+
+            &_item {
+                margin: 0 15px;
+                cursor: pointer;
+
+                &:hover {
+                    color: rgb(71, 168, 152);
+                    text-shadow: 
+                        3px 0px 7px rgba(72, 224, 191, 0.1), 
+                        -3px 0px 7px rgba(72, 224, 191, 0.1), 
+                        0px 4px 7px rgba(72, 224, 191, 0.1);
+                }
+            }
+        } 
+    }
+}

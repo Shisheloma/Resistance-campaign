@@ -1,0 +1,13 @@
+  .escape {
+    position: absolute;  
+    width: 100%;  
+    text-align: center;
+    font-size: 6vmin; 
+    padding: 0 2%;
+    font-family: Helvetica-Bold-Oblique, Helvetica-Black-Cyrillic, Helvetica-Black;
+    opacity: 1;
+    
+    &.hidden {
+        opacity: 0; 
+    }
+} 

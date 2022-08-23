@@ -1,0 +1,39 @@
+.top-section {
+    .right_slide { 
+        &_narrow-subtitle {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100%;            
+            font-size: 4.2vh; 
+            font-family: Outfit;  
+            text-align: center;
+            z-index: 1;
+            
+            &.shadow { 
+                text-shadow:rgba(0, 0, 0, 0.25) 0px 0px 5px,   
+                            rgba(0, 0, 0, 0.25) 0px 0px 5px,   
+                            rgba(0, 0, 0, 0.25) 0px 0px 5px,   
+                            rgba(0, 0, 0, 0.25) 0px 0px 5px,   
+                            rgba(0, 0, 0, 0.25) 0px 0px 5px;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+        
+        &.zero_slide_main {
+            background: url('../../assets/Sections/Top-section/stripes.webp') 0%/65vh 35vh;  
+
+            .zero_cover {
+                width: 63.68vh;
+                margin: auto;
+
+                &_background {
+                    height: 100%;
+                    background: url('../../assets/Sections/Top-section/header_left.webp') no-repeat center/cover; 
+                    
+                }
+            }
+        }
+    }
+}

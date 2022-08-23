@@ -1,0 +1,130 @@
+.sponsors-section {
+    .sponsors_body {
+        &_faces {
+            flex-basis: 100%;
+            height: 100%;
+            margin: 0;
+            padding-top: 5vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: start; 
+            list-style: none;  
+
+            &_item { 
+                height: 35vh;
+                flex-shrink: 0;
+                flex-basis: 25%;  
+                display: flex;
+                justify-content: center; 
+                animation: floatingX 15s infinite;
+
+                &:hover {
+                    .sponsors_body_faces_item_container { 
+                        transform: rotateY(180deg);
+                    }
+                }
+                
+                // targeting each individual item
+                &:nth-of-type(2n) { 
+                    .sponsors_body_faces_item_image {
+                        animation-direction: alternate-reverse;
+                    }
+                }
+
+                &:nth-of-type(1) {
+                    animation-delay: -1s;
+                    padding-top: 2vh; 
+                    .sponsors_body_faces_item_image {
+                        animation-delay: -1s; 
+                    }
+                }
+                
+                &:nth-of-type(2) {
+                    animation-delay: -2s;
+                    .sponsors_body_faces_item {
+                        &_image {
+                            animation-delay: -2s; 
+                        }
+                        &_container { 
+                            width:  19vh; 
+                            height: 19vh; 
+                        }
+                    }
+                }
+                
+                &:nth-of-type(3) {
+                    animation-delay: -3s;
+                    .sponsors_body_faces_item_image {
+                        animation-delay: -3s; 
+                    }
+                }
+                
+                &:nth-of-type(4) {
+                    animation-delay: -4s;
+                    .sponsors_body_faces_item_image {
+                        animation-delay: -4s; 
+                    }
+                }
+                
+                &:nth-of-type(5) {
+                    animation-delay: -5s;
+                    .sponsors_body_faces_item_image {
+                        animation-delay: -5s; 
+                    }
+                }
+                
+                &:nth-of-type(6) {
+                    animation-delay: -6s;
+                    .sponsors_body_faces_item_image {
+                        animation-delay: -6s; 
+                    }
+                }
+
+                &:nth-of-type(7) {
+                    animation-delay: -7s;
+                    .sponsors_body_faces_item { 
+                        &_image {
+                            animation-delay: -7s; 
+                        }
+                        &_container { 
+                            width:  24vh; 
+                            height: 24vh; 
+                        }
+                    }
+                }
+                
+                &_container { 
+                    transform-style: preserve-3d;
+                    transition: all 1200ms; 
+                    width:  20vh; 
+                    height: 20vh;  
+                }
+
+                &_side {
+                    position: absolute; 
+                    top: 0;
+                    display: grid;
+                    place-content: center;
+                    transform-style: preserve-3d; 
+                }
+                
+                &_front { 
+                    transform: translateZ(-5px)  
+                }
+
+                &_back { 
+                    transform: rotateY(180deg) translateZ(-5px); 
+                }
+
+                &_image {   
+                    backface-visibility: hidden; 
+                    animation: floatingY 4s infinite alternate ease-in-out;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;    
+                } 
+            } 
+        }
+    }
+}

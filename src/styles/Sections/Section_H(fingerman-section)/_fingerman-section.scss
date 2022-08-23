@@ -1,0 +1,20 @@
+@import './Partials/fingerman';
+@import './Partials/puller';
+@import './Partials/keyframes';
+
+.fingerman-section { 
+    position: relative;
+    height: 80vh;
+    font-family: Caudex;
+    overflow: hidden;
+    overflow: clip;
+    // God, burn Safari  
+    background-color: rgb(20, 20, 20);
+    overflow-anchor: none;
+    // cancel all the shit for touchscreens
+    touch-action: none; 
+    user-select: none;
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none;
+    cursor: none;  
+}

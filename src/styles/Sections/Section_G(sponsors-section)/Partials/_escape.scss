@@ -1,0 +1,12 @@
+.sponsors-section {
+    .sponsors {
+        &_escape {  
+            top: 10vh; 
+            transform: translateY(-80%);
+            z-index: -1;
+            transition: top 700ms;
+        }
+    }
+}
+
+// see shared escape styles in Common folder

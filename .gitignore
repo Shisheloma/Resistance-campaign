@@ -1,0 +1,9 @@
+build
+node_modules
+img
+**/archive
+**/psd
+**/Illustrator
+**/raw
+*.psd
+*.ai

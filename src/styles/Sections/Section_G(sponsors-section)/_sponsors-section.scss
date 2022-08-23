@@ -1,0 +1,49 @@
+@import './Partials/escape';
+@import './Partials/Body/body';
+@import './Partials/footer';
+
+.sponsors-section {
+    position: relative;
+    background-color: rgb(31, 31, 31);  
+    min-height: 75vh;
+
+    @include ratio-custom('8/5') {
+        .sponsors_body {
+            flex-direction: column;
+
+            &_header { 
+                &_title {
+                    padding-bottom: 0.5vh;
+                }
+
+                &_wonder {
+                    position: relative;  
+                    padding: 0 0 0 18vh;
+                    writing-mode: horizontal-tb;
+                    transform: none;
+                }
+            }
+
+            &_faces {
+                padding-top: 1vh; 
+            } 
+        }
+    }
+
+    @include ratio-custom('8/7') {
+        .sponsors_body {
+            &_faces_item {
+                flex-basis: 50%;   
+                &:nth-of-type(3) {
+                    .sponsors_body_faces_item_container {
+                        align-self: center;
+                    }
+                }
+                &:nth-of-type(5) { 
+                    order: 1;
+                    height: 30vh;
+                } 
+            }
+        }
+    }
+} 

@@ -1,0 +1,24 @@
+.top-section {
+    .autoscroll_play {
+        position: absolute;
+        height: MIN(9.2vh, 85px);
+        width: MIN(9.2vh, 85px);
+        top: 15vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.5) url('../../assets/icons/play.webp') no-repeat 75% 50%/65%; 
+        opacity: 0.9;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(200, 200, 200, 0.1);  
+        }
+
+        &.scrolling {
+            background-image: url('../../assets/icons/pause.webp');
+            background-position: center;
+            background-size: 45%;
+        }
+    }   
+}

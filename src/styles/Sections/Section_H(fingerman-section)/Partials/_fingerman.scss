@@ -1,0 +1,66 @@
+.fingerman-section { 
+    .fingerman {
+        position: relative;
+        height: 100%; 
+        object-fit: contain; 
+
+        &_item {
+            position: absolute;   
+            height: 100%;
+            width: 100%;
+
+            &_1 {
+                background: url("../../assets/Sections/Fingerman-section/fingerman.webp") no-repeat 0% 50%/contain; 
+                opacity: 1;  
+            }
+            
+            &_2 {
+                background: url("../../assets/Sections/Fingerman-section/fingerman_smile_1.webp") no-repeat 0% 50%/contain; 
+                opacity: 0;
+
+                &.active {
+                    animation: fingerman 600ms 300ms linear forwards;  
+                }  
+            }
+            
+            &_3 {
+                background: url("../../assets/Sections/Fingerman-section/fingerman_smile_2.webp") no-repeat 0% 50%/contain; 
+                opacity: 0;
+                
+                &.active {
+                    animation: fingerman 600ms 600ms linear forwards;  
+                }  
+            } 
+        }
+
+        &_smile {
+            position: absolute; 
+            top: 0;
+            left: 0;
+            opacity: 0;
+
+            &_1 {    
+            }
+
+            &_2 {   
+            }
+        }
+        
+        &_text {
+            position: absolute;
+            top: 33%;
+            left: 48vh;
+            font-size: 25px;
+
+            &.easter {
+                &_1 {
+                    content: "<br> dont you touch me here!";
+                }
+
+                &_2 {
+                    content: "<br> stop it!"; 
+                }
+            }
+        }
+    } 
+}

@@ -1,0 +1,40 @@
+.evil-section_sticky { 
+    .evil {
+        position: absolute;
+        top: 0;
+        bottom: 80vh;
+        left: 50%;
+        transform: translateX(-50%);   
+        z-index: 1;
+
+        &_container {
+            position: sticky;
+            height: 100vh;
+            top: 0;
+            bottom: 80vh;
+            display: grid;
+            place-items: center;
+        }
+
+        &_image {
+            position: absolute;      
+            left: 50%;
+            transform: translateX(-50%);
+            height: 70%;  
+        }
+        
+        &_saw { 
+            height: 100%;  
+            top: 50%;
+            transform: translate(180%, -70%)  rotate(-70deg);
+        }
+
+        &_red {
+            opacity: 0;
+            
+            &_active {
+                animation: red 1s 1; 
+            } 
+        }
+    } 
+}

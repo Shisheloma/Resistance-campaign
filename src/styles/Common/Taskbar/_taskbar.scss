@@ -1,0 +1,140 @@
+@import './keyframes';
+
+.taskbar {
+    position: fixed;
+    top: 0;
+    height: 5vh;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    &:hover {
+        .taskbar_container { 
+            transform: translateY(0);
+        }
+    }
+
+    :focus {
+        outline: none;
+    }
+
+    &_container {
+        display: flex;
+        align-items: center;
+        gap: 1vh;
+        width: 100%;
+        height: 100%;
+        padding: 0 1vw;
+        background-color: rgba(0, 0, 0, 0.856);
+        transform: translateY(-5vh);
+        transition: transform 200ms;
+        animation: none;
+
+        &.flick {
+            animation: flick 1500ms;  
+            transform: none;
+            transition: transform 500ms;
+        }
+    }
+
+    &_button {
+        height: 100%;
+        width: 5vh;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+
+        &_play {
+            background: transparent url('../../assets/icons/play.webp') no-repeat  center/70%;
+
+            &.scrolling {
+                background-image: url('../../assets/icons/pause.webp');
+                background-size: 50%;
+            }
+
+            &.fail {
+                animation: fail_ccw 500ms;    
+            } 
+        }
+ 
+        &_top {
+            background: transparent url('../../assets/icons/replay.webp') no-repeat  center/80%; 
+            animation: none;
+
+            &.flip {
+                animation: flip 2s;
+            }
+            
+            &.fail {
+                animation: fail 500ms;    
+            }
+        } 
+
+        &_video {   
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; 
+            border: 1px solid;
+            border-color: rgb(175, 175, 175);
+            transition: background-color 100ms;
+
+            &:hover { 
+                background-color: rgba(189, 49, 18, 0.726); 
+            }
+
+            &_play { 
+                height: 4.4vh;
+                width: 3.6vh;
+                margin-left: 1.5vh;
+                background: rgba(20, 20, 20, 0.2) url("../../assets/icons/play_bold.svg") no-repeat 60% 50%/70%;    
+
+                &.playing {
+                    background-image: url("../../assets/icons/pause_bold.svg"); 
+                    background-size: 73%;
+                    background-position: 47% 50%;
+                }
+                
+                &.ended {
+                    background-image: url("../../assets/icons/replay_bbold.svg");  
+                    background-position: center;   
+                }
+            }
+            
+            &_mute { 
+                height: 3.9vh;
+                width: 3.1vh;
+                background: rgba(20, 20, 20, 0.425) url("../../assets/icons/unmute_bold.svg") no-repeat 46% 47%/65%;   
+                
+                &:hover { 
+                    background-color: rgba(189, 49, 18, 0.5); 
+                }
+
+                &.muted {
+                    background-image: url("../../assets/icons/mute_bold.svg");  
+                    background-size: 70%;
+                    background-position: 55% 50%;
+
+                    &:hover { 
+                        filter:  brightness(0) invert(1);
+                        background-color: rgba(110, 110, 110, 0.25); 
+                    }
+                } 
+            }
+
+            &_center { 
+                height: 3.9vh;
+                width: 3.1vh;
+                margin-left: -0.1vh;
+                background: rgba(20, 20, 20, 0.2) url("../../assets/icons/crosshair.svg") no-repeat center/80%;    
+            }
+        }
+    }
+ 
+    &_speed { 
+        line-height: 5vh;
+        opacity: 0.8;
+        cursor: pointer;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,148 @@
+
+.wolf-section { 
+    height: 573vh; 
+    pointer-events: none; 
+
+    &_container {
+        height: 900vh;
+        position: relative;   
+    }
+
+    &_sticky { 
+        position: sticky;
+        height: 220vh;   
+        // sticky-scroll start - s/b in sync with bite (a lil bit later)
+        top: 45vh; 
+    }
+
+    .wolf {  
+        &.hidden {
+            visibility: hidden;
+        }
+
+        &_item {
+            position: absolute;  
+            height: 100%;        
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(220vh * 0.53); 
+        }
+
+        &_main { 
+            background: url("../../assets/Sections/Wolf-section/wolf.webp") no-repeat center/contain; 
+
+            &::after {
+                content: "";
+                position: absolute;  
+                height: 100%;        
+                width: 100%;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background: url("../../assets/Sections/Wolf-section/wolf.webp") no-repeat center/contain; 
+                opacity: 0.5;
+            }
+        }
+
+        &_text { 
+            font-size: 6vh;
+            writing-mode: vertical-lr;
+            text-align: center;      
+            font-family: Helvetica-Bold-Oblique, Helvetica-Black-Cyrillic, Helvetica-Black;
+
+            &_left {
+                position: relative;  
+                transform: translate(40.5vh, 26vh) rotate(180deg); 
+            }
+
+            &_right {
+                position: relative; 
+                transform: translate(66vh, -17vh) rotate(180deg);
+            }
+
+            &_bottom {
+                display: none;
+
+                &_left {
+                    position: relative;  
+                    transform: translate(50vh, 125vh) rotate(180deg); 
+                }
+
+                &_right {
+                    position: relative; 
+                    transform: translate(52vh, 125vh) rotate(180deg);
+                }
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
+
+        &_frame {
+            &_left {
+                background: url("../../assets/Sections/Wolf-section/wolf_frame_left.webp") no-repeat center/contain;  
+            }
+
+            &_right {
+                background: url("../../assets/Sections/Wolf-section/wolf_frame_right.webp") no-repeat center/contain;  
+            }
+        }
+
+        &_dress {
+            background: url("../../assets/Sections/Wolf-section/wolf_dress.webp") no-repeat center/contain; 
+        }
+
+        &_panties {
+            background: url("../../assets/Sections/Wolf-section/wolf_panties.webp") no-repeat center/contain; 
+        }
+
+        &_evil {
+            overflow: hidden;  
+            overflow: clip; 
+            
+            &_item {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform-origin: 54.2% 44.5%;
+                background: url("../../assets/Sections/Wolf-section/wolf_evil.webp") no-repeat center/contain;  
+
+                &.hide-horn {
+                    clip-path: polygon(0 0, 30% 0, 100% 100%, 0% 100%);
+                }
+            }
+        }
+
+        &_stroke {
+            display: none;
+            position: absolute; 
+            height: 100%;
+            left: 50%;
+
+            &_input {
+                top: 0; 
+                transform: translate(-50%, -100%);
+            }
+
+            &_output {
+                bottom: 0;  
+                opacity: 1;
+                transition: opacity 500ms;
+
+                &.hidden {
+                    opacity: 0;
+                }
+            }
+
+            &.active {
+                display: block; 
+            }
+
+            &_line {
+                stroke: #ffc5c4; 
+                stroke-width: calc(0.045 * 90vh / 220); 
+            }
+        } 
+    } 
+}

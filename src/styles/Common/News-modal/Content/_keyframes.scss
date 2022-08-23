@@ -1,0 +1,10 @@
+
+@keyframes birdman {
+    0% {
+        transform: none; 
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        transform: rotate(90deg);
+    } 
+}

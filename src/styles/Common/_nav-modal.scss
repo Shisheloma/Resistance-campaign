@@ -1,0 +1,190 @@
+body {
+    // sass can't hadnle different units in runtime so native variable used
+    --logo-size: clamp(50px, 9.5vh, 90px);
+}
+
+.nav_logo {
+    position: absolute;
+    // screen height - ticker bottom - ticker height - 1.1 * logo diameter ;
+    top: calc(100vh - 20px - 28px - 1.1 * var(--logo-size));
+    bottom: 0;
+    left: 50%; 
+    transform: translate(-50%);
+    pointer-events: none;
+    z-index: 99; 
+
+    &_item {
+        cursor: pointer; 
+        position: sticky;
+        display: block; 
+        margin: auto;
+        top: calc(var(--logo-size) / 6); 
+        width: var(--logo-size); 
+        height: var(--logo-size); 
+        object-fit: contain;
+        pointer-events: auto;
+    }
+}
+
+.nav_modal {  
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    padding: calc(var(--logo-size) * 1.35) 0;
+    color: #f2b32a;
+    
+    visibility: hidden;
+    transition: visibility 0s 1s;      
+ 
+    &:before {
+        content: "";
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;        
+        left: 0;
+        right: 0;
+        z-index: -1;
+        
+        opacity: 0.95;
+        transform: scaleX(0);
+        background-color: #006666;
+        transition: all 500ms, opacity 2s, transform 500ms ease, background 500ms 415ms;
+    }     
+
+    &_body {
+        position: relative; 
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;  
+          
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: #006666; 
+            border: 1px solid rgb(141, 141, 141);
+            
+            opacity: 0;
+            transition: all 0ms, opacity 300ms;  
+        }
+
+        &_title {
+            cursor: pointer;
+            font-size: MIN(4vh, 26px);
+            font-weight: 500;
+            margin: MIN(2.5vh, 20px) 0; 
+            z-index: 1;
+
+            opacity: 0;
+            transition: opacity 300ms; 
+                
+            &:hover {
+                text-decoration: underline; 
+            }
+        }
+        
+        &_list { 
+            display: grid;
+            place-content: center;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            pointer-events: none; 
+            z-index: 1;
+            
+            list-style: none;
+            font-size: MIN(MAX(5.5vh, 3vw), 47px); 
+            border-top: 1px solid #f2b32a;
+            border-bottom: 1px solid #f2b32a;
+            
+            opacity: 0;
+            transition: opacity 300ms;  
+
+            &_item { 
+                cursor: pointer;
+                pointer-events: auto;                 
+                
+                &:hover {
+                    text-decoration: underline;
+                } 
+            }
+        }
+
+        &_footer {
+            display: flex; 
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            margin: 0; 
+            padding: 2vh 0; 
+            list-style: none;
+            pointer-events: none; 
+            z-index: 1;
+            
+            opacity: 0;
+            transition: opacity 300ms;  
+            
+            &_item {
+                font-size: clamp(13px, 2.4vw, 20px); 
+                pointer-events: auto; 
+                cursor: pointer;
+                
+                &:hover {
+                    text-decoration: underline; 
+                }
+            }
+        }
+    }
+
+    &_logo {
+        position: absolute;
+        width: var(--logo-size);  
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;        
+
+        opacity: 0;
+        transition: z-index 0s, opacity 250ms 200ms;
+
+        &#head-opposite {
+            transition: z-index 0s, opacity 200ms ease-in;
+        }
+    }
+    
+    &_active {    
+        visibility: visible;
+        transition: visibility 0s 0s;  
+    
+        &:before {
+            opacity: 1;
+            transform: scaleX(100%);
+            background-color: rgba(20, 20, 20, 0.991);
+            transition: all 500ms, opacity 0s, background 400ms -100ms;
+        }    
+
+        .nav_modal_body { 
+            &::before {
+                opacity: 1;
+                transition: opacity 1s 150ms;
+            } 
+
+            &_title,
+            &_list,
+            &_footer {
+                opacity: 1; 
+                transition: opacity 1s 150ms; 
+            } 
+        } 
+
+        .nav_modal_logo { 
+            opacity: 0.95; 
+            transition: opacity 0ms; 
+        }
+    }
+}

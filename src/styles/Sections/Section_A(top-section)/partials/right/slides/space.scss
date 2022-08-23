@@ -1,0 +1,69 @@
+.top-section {
+    .right_slide_item {
+        &_space {
+            transform-origin: bottom;
+            transform: scale(1.05);
+            z-index: -1;
+
+            &_bg {
+                background: url("../../assets/Sections/Top-section/space_cropped_sky.webp") no-repeat center/cover;
+            }   
+            
+            &_flowers {
+                background: url("../../assets/Sections/Top-section/space_cropped_flowers.webp") no-repeat center/cover;
+            }
+
+            &_road {  
+                transform-origin: 50% 70%;
+                animation:  
+                        space_road 5s linear alternate infinite,
+                        space_road_flick 25s 5s linear infinite; 
+                background: url("../../assets/Sections/Top-section/space_cropped_road.webp") no-repeat center/cover;
+            }
+            
+            &_car {
+                background: url("../../assets/Sections/Top-section/space_cropped_car.webp") no-repeat center/cover;
+            }
+            
+            &_cats {
+                transform-origin: bottom;  
+
+                &::after {
+                    transform-origin: 52.5% 43%;   
+                }
+
+                &_a {
+                    animation: cats_orbit 16s linear -15s infinite;
+                    &::after { 
+                        background: url("../../assets/Sections/Top-section/space_cropped_cats_a.webp") no-repeat center/cover;
+                        animation: cats_orbit 6s linear infinite; 
+                    }
+                }
+
+                &_b {
+                    animation: cats_orbit 16s linear -12s infinite;
+                    &::after { 
+                        background: url("../../assets/Sections/Top-section/space_cropped_cats_b.webp") no-repeat center/cover;
+                        animation: cats_orbit 6s linear infinite;
+                    }
+                }
+
+                &_c {
+                    animation: cats_orbit 16s linear -10s infinite; 
+                    &::after { 
+                        background: url("../../assets/Sections/Top-section/space_cropped_cats_c.webp") no-repeat center/cover;
+                        animation: cats_orbit 6s linear infinite;
+                    }
+                }
+
+                &_d {
+                    animation: cats_orbit 16s linear -5s infinite; 
+                    &::after { 
+                        background: url("../../assets/Sections/Top-section/space_cropped_cats_d.webp") no-repeat center/cover;
+                        animation: cats_orbit_half 16s linear infinite;
+                    }
+                }
+            }
+        }
+    }
+}

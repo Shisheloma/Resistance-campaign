@@ -1,0 +1,14 @@
+@import './Partials/header';
+@import './Partials/faces';
+@import './Partials/keyframes';
+
+.sponsors-section {
+    .sponsors_body {
+        display: flex; 
+        // height: clamp(70vh, 70vh, 100vh);  
+        min-height: 70vh;
+        overflow-x: hidden; 
+        overflow-x: clip; 
+        z-index: 1;  
+    }
+}

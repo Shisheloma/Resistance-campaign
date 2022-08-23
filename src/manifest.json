@@ -1,0 +1,28 @@
+{
+    "name": "Resistance campaign",
+    "short_name": "Resistance camp",
+    "display": "fullscreen", 
+    "orientation": "landscape",
+    "background_color": "#141414",
+    "theme_color": "#141414",
+    "icons": [
+        {
+          "src": "./assets/favicon-144.png",
+          "sizes": "144x144",
+          "type": "image/png",
+          "purpose": "any"
+        }, 
+        {
+            "src": "./assets/favicon-512.png",
+            "sizes": "512x512",
+            "type": "image/png" 
+          }, 
+          {
+              "src": "./assets/favicon-512_maskable.png",
+              "sizes": "512x512",
+              "type": "image/png", 
+              "purpose": "maskable"
+        }
+    ],
+    "start_url": "." 
+}

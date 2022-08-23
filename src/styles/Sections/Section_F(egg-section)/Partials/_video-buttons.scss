@@ -1,0 +1,60 @@
+.egg-section { 
+    .egg_video {
+        &_button {
+            display: block;
+            position: absolute;  
+            
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            filter: invert(0.9); 
+            z-index: 1;
+            
+            &:hover {
+                filter: invert(0.1); 
+                transition: all 100ms;
+            }
+
+            &:focus {
+                outline: 1px red solid;
+                filter: invert(0.1); 
+            }
+        }
+
+        &_play { 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            height: 12vh;
+            width:  12vh; 
+            background: rgba(20, 20, 20, 0.418) url("../../assets/icons/play.svg") no-repeat center/60%;   
+
+            &.playing {
+                background-image: url("../../assets/icons/pause.svg"); 
+            }
+
+            &.ended {
+                background-image: url("../../assets/icons/replay.svg");  
+            }
+        }
+
+        &_mute {
+            bottom: 7%;
+            right: 29%;
+            transform: translateY(50%); 
+            height: 3.2vh;
+            width:  3.2vh; 
+            background: rgba(20, 20, 20, 0.425) url("../../assets/icons/unmute.svg") no-repeat center/70%;   
+
+            &.muted {
+                background-image: url("../../assets/icons/mute.svg");  
+                background-color: rgba(214, 145, 145, 0.425);
+                filter: none;
+                
+                &:hover {
+                    background-color: rgba(213, 213, 213, 0.425); 
+                }
+            } 
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// media
+@mixin ratio-mid() {
+    @media screen and (max-aspect-ratio: 5/3) {
+        @content
+    }   
+};
+
+@mixin ratio-small() {
+    @media screen and (max-aspect-ratio: 11/10) {
+        @content
+    }   
+};
+
+@mixin ratio-xsmall() {
+    @media screen and (max-aspect-ratio: 7/10) {
+        @content
+    }   
+};
+
+@mixin ratio-custom($value) {
+    @media screen and (max-aspect-ratio: $value) {
+        @content
+    }   
+};
+ 
+@mixin width-height($width, $height) {
+    @media screen and (max-width: $width) and (max-height: $height) {
+        @content
+    }   
+};
+ 

@@ -1,0 +1,60 @@
+.top-section {
+    .right_slide_item {
+
+        &_stones {
+            &_bg {
+                background: url("../../assets/Sections/Top-section/stones_bg.webp") no-repeat center/cover;
+            }
+
+            &_a {
+                transform: rotate(15deg);
+                transform-origin: 50.5% 68.5%;
+                &::after { 
+                    background: url("../../assets/Sections/Top-section/stones_a.webp") no-repeat center/cover;
+                }
+            }
+        
+            &_b {
+                transform: rotate(-15deg);
+                transform-origin: 48% 55.5%;
+                &::after { 
+                    background: url("../../assets/Sections/Top-section/stones_b.webp") no-repeat center/cover;
+                }
+            } 
+        
+            &_c {
+                transform: rotate(10deg);
+                transform-origin: 49.5% 52%;
+                &::after { 
+                    background: url("../../assets/Sections/Top-section/stones_c.webp") no-repeat center/cover;
+                }
+            }
+            
+            &_d {
+                transform: rotate(-10deg);
+                transform-origin: 48% 46.5%;
+                &::after { 
+                    background: url("../../assets/Sections/Top-section/stones_d.webp") no-repeat center/cover;
+                }
+            }
+            
+            &_e {
+                transform: rotate(10deg);
+                transform-origin: 49% 43%;
+                &::after { 
+                    background: url("../../assets/Sections/Top-section/stones_e.webp") no-repeat center/cover;
+                }
+            } 
+
+            &_animate {  
+                &:nth-of-type(2n) {
+                    animation: stones_one 2s linear alternate infinite;
+                }
+
+                &:nth-of-type(2n+1) {
+                    animation: stones_two 2s linear alternate infinite;
+                }
+            }
+        } 
+    }
+}

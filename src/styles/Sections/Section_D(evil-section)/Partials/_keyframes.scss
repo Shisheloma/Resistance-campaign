@@ -1,0 +1,202 @@
+// evil
+@keyframes red {
+    from {
+        opacity: 1; 
+    }
+    5% {
+        opacity: 0;  
+    }
+    15% {
+        opacity: 1;  
+    }
+    20% {
+        opacity: 0;  
+    }
+    30% {
+        opacity: 1;  
+    }
+    40% {
+        opacity: 0;  
+    }
+    50% {
+        opacity: 0;  
+    } 
+}
+
+// grinder
+@keyframes lever { 
+    from {
+        transform: rotate(7deg);
+    }  
+    100% {
+        transform: rotate(6deg);
+    }
+} 
+
+@keyframes lever2 { 
+    from {
+        animation-timing-function: ease-in;
+        transform: scale(1.05, 1); 
+    } 
+    25% {
+        animation-timing-function: ease-out;
+        transform: scale(0.9, 0) translateX(2%); 
+        filter: blur(0.3px) brightness(60%);
+    }
+    50% {
+        animation-timing-function: ease-in;
+        transform: scale(1, -0.99) translateX(-0.4%); 
+        filter: none;
+    }
+    75% {
+        animation-timing-function: ease-out;
+        transform: scale(1.1, 0) translateX(-3.2%); 
+        filter: blur(0.5px) brightness(60%);
+    } 
+    100% {
+        animation-timing-function: ease-out;
+        transform: scale(1.05, 1); 
+        filter: none; 
+    }
+}
+
+@keyframes rotateSafari { 
+    from {
+        animation-timing-function: ease-in;
+        transform: rotateX(0deg) rotateZ(7deg); 
+    } 
+    25% {
+        animation-timing-function: ease-out;
+        transform: rotateX(90deg) rotateZ(0deg) translateX(2%); 
+        filter: blur(0.3px);
+    }
+    50% {
+        animation-timing-function: ease-in;
+        transform: rotateX(180deg) rotateZ(-7deg) translateX(-0.4%); 
+        filter: none;
+    }
+    75% {
+        animation-timing-function: ease-out;
+        transform: rotateX(270deg) rotateZ(0deg) translateX(-3.2%); 
+        filter: blur(0.5px);
+    } 
+    100% {
+        animation-timing-function: ease-out;
+        transform: rotateX(360deg) rotateZ(7deg); 
+    }
+}
+
+@keyframes handle {
+    from {
+        animation-timing-function: ease-in;
+        transform: translate(-3.3%, -2%) rotate(4deg);
+    } 
+    25% {
+        animation-timing-function: ease-out;
+        transform: translate(0%, -45%) rotate(0deg);
+        filter: blur(0.3px) brightness(60%);
+    }
+    50% {
+        animation-timing-function: ease-in;
+        transform: translate(1.7%, -87.3%) rotate(-4deg); 
+        filter: none;
+    }
+    75% {
+        animation-timing-function: ease-out;
+        transform: translate(-2.5%, -45%) rotate(0deg);
+        filter: blur(0.3px) brightness(90%);
+    } 
+    100% {
+        animation-timing-function: ease-out;
+        transform: translate(-3.3%, -2%) rotate(4deg); 
+        filter: none;
+    }
+}
+
+@keyframes handle2 {
+    from {
+        animation-timing-function: ease-in;
+        transform: scale(1.05) rotate(-6deg); 
+    }  
+    25% {
+        animation-timing-function: ease-out;
+        transform: scale(0.91) rotate(3deg);  
+    }
+    50% {
+        animation-timing-function: ease-in;
+        transform: scale(0.94) rotate(8deg); 
+    }
+    80% {
+        animation-timing-function: ease-out;
+        transform: scale(1.08) rotate(-2deg);  
+    } 
+    100% {
+        animation-timing-function: ease-out;
+        transform: scale(1.05) rotate(-6deg);  
+    }
+}
+
+@keyframes handle2Safari {
+    from {
+        animation-timing-function: ease-in;
+        transform: scale(1.05) rotate(-6deg);
+    }  
+    25% {
+        animation-timing-function: ease-out;
+        transform: scale(0.91 2) rotate(0deg);
+    }
+    50% {
+        animation-timing-function: ease-in;
+        transform: scale(0.94) rotate(3deg);
+    }
+    80% {
+        animation-timing-function: ease-out;
+        transform: scale(1.08 2) rotate(-2deg);
+    } 
+    100% {
+        animation-timing-function: ease-out;
+        transform: scale(1.05) rotate(-6deg);
+    }
+}
+
+@keyframes zIndex1 {
+    0% {
+        z-index: 1;
+    }   
+    1% {
+        z-index: 1;
+    }
+    2% {
+        z-index: 0;
+    }
+    49% {
+        z-index: 0;
+    }
+    50% {
+        z-index: 1;
+    }  
+    100% {
+        z-index: 1; 
+    }
+}
+
+@keyframes zIndex2 {
+    0% {
+        z-index: 2;
+    }    
+    1% {
+        z-index: 0;
+    }
+    42% {
+        z-index: 0;
+    }
+    43% {
+        z-index: 2;
+    } 
+    99% {
+        z-index: 2;
+    }
+    100% {
+        z-index: 2; 
+    }
+}

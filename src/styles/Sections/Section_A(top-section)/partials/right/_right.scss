@@ -1,0 +1,37 @@
+@import './slides/zero';
+@import './slides/stones';
+@import './slides/cats';
+@import './slides/space';
+
+.top-section {
+    .right {
+        width: 50%;
+        height: 100%;
+        
+        .splide__pagination {
+            bottom: 4px; 
+        }
+
+        &_track { 
+            height: 100%;
+        } 
+
+        &_slide { 
+            height: 100%;
+            overflow-x: hidden;
+            overflow-x: clip;
+
+            &_item,
+            &_item::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%; 
+            }    
+
+            &_narrow-subtitle {
+                visibility: hidden;
+            }
+        }   
+    }
+}
