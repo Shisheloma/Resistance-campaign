@@ -1,5 +1,6 @@
 import { throttleFrame } from '../../../utils/throttleFrame'; 
 import { scrolledRatio } from '../../../utils/scrolledRatio'; 
+import { dvhString } from '../../../Common/dynamicHeight';
 
 import { container, egg, escapeEgg, escapeSponsors } from './videoScroll/nodes';
 import { keyframes } from './videoScroll/keyframes';
@@ -22,7 +23,7 @@ export const videoScroll = () => {
         if (scroll < 0) {   
             escapeEgg.classList.add(`hidden`);   
             egg.style.transform = `none`;   
-            escapeSponsors.style.top = `10vh`;  
+            escapeSponsors.style.top = `${dvhString(10)}`;  
         } 
         
         // return if out of keyframe boundaries

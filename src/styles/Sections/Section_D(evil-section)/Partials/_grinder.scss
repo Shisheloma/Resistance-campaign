@@ -1,7 +1,7 @@
 .evil-section_sticky { 
     .grinder { 
-        height: 90vh;
-        width: 75.4vh;
+        height: calc(var(--vh, 1vh) * 90);
+        width: calc(var(--vh, 1vh) * 75.4);
         position: absolute;
         left: 50%;
         transform: translateX(-59.8%);

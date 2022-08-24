@@ -2,7 +2,7 @@
     .egg {
         &_bg {
             position: absolute;
-            height: 60vh;
+            height: calc(var(--vh, 1vh) * 60);
             top: 50%;
             left: 50%;
             margin-top: 0.5vh;
@@ -17,8 +17,8 @@
 
         &_video {  
             position: relative;
-            height: 60vh;
-            width: 44vh;
+            height: calc(var(--vh, 1vh) * 60);
+            width: calc(var(--vh, 1vh) * 44);
             overflow: hidden; 
             overflow: clip; 
             margin-top: 1vh;
@@ -51,7 +51,7 @@
                 position: relative;            
                 top: 50%;
                 left: 50%;
-                height: 77vh;  
+                height: calc(var(--vh, 1vh) * 77);  
                 transform: translate(-50%, -50%);  
             }
         }

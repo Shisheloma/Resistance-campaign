@@ -6,7 +6,7 @@ body {
 .nav_logo {
     position: absolute;
     // screen height - ticker bottom - ticker height - 1.1 * logo diameter ;
-    top: calc(100vh - 20px - 28px - 1.1 * var(--logo-size));
+    top: calc(calc(var(--vh, 1vh) * 100) - 20px - 28px - 1.1 * var(--logo-size));
     bottom: 0;
     left: 50%; 
     transform: translate(-50%);

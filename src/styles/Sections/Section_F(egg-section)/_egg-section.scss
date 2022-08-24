@@ -5,18 +5,18 @@
 
 .egg-section {  
     position: relative;
-    height: 380vh;   
+    height: calc(var(--vh, 1vh) * 380);   
 
     &_container {
         position: relative;
-        top: 70vh; 
-        height: 360vh;   
+        top: calc(var(--vh, 1vh) * 70); 
+        height: calc(var(--vh, 1vh) * 360);   
         overflow: clip;
     }
 
     &_sticky {
         position: sticky;  
-        top: 20vh;  
+        top: calc(var(--vh, 1vh) * 20);  
         display: flex;
         justify-content: center;
         transition: transform 500ms;

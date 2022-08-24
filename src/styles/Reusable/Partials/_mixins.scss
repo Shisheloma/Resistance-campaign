@@ -22,10 +22,3 @@
         @content
     }   
 };
- 
-@mixin width-height($width, $height) {
-    @media screen and (max-width: $width) and (max-height: $height) {
-        @content
-    }   
-};
- 

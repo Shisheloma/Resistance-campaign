@@ -18,8 +18,8 @@
 
         &_slide { 
             height: 100%;
-            overflow-x: hidden;
-            overflow-x: clip;
+            overflow: hidden;
+            overflow: clip;
 
             &_item,
             &_item::after {

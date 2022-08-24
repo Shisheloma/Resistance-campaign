@@ -1,3 +1,5 @@
+import { dvhString } from "../../../Common/dynamicHeight";
+
 import { keyframes, progress } from "./keyframes";
 import { containerSticky, head, liquidLine, liquidStart, log, red } from "./nodes";
 
@@ -24,7 +26,7 @@ export const scrollResets = scroll => {
     if (scroll < keyframes[4]) {
         const headY = headTransform.y[6];
         const headAngle = headTransform.angle[6];
-        head.style.transform = `translate(-50%, ${headY}vh) rotate(${headAngle}deg)`;
+        head.style.transform = `translate(-50%, ${dvhString(headY)}) rotate(${headAngle}deg)`;
 
         if (scroll < (keyframes[4] + keyframes[5]) / 2.2) {
             const clipSin = Math.sin(headAngle * Math.PI/180);
@@ -41,6 +43,6 @@ export const scrollResets = scroll => {
     if (scroll < keyframes[5]) {
         log.classList.add('grinder_log_active');
         const logX = logTransform[6]; 
-        log.style.transform = `translateX(${logX}vh)`;
+        log.style.transform = `translateX(${dvhString(logX)})`;
     } 
 };

@@ -1,6 +1,7 @@
 import '../styles/main.scss'; 
 
 import { lazyLoadInit } from './Common/lazyLoadInit';
+import { dynamicHeight } from './Common/dynamicHeight';
 import { autoscroll } from './Common/autoscroll';  
 import { navModal } from './Common/navModal/navModal';
 import { topSection } from './Sections/Section_A(top-section)/topSection'; 
@@ -15,9 +16,10 @@ import { serviceWorkerRegister } from '../serviceWorkerRegister';
 
 document.addEventListener( 'DOMContentLoaded', function () { 
     lazyLoadInit();
+    dynamicHeight();
+    topSection();
     autoscroll();
     navModal();  
-    topSection();
     missionSection();
     proceedingSection();
     evilSection();

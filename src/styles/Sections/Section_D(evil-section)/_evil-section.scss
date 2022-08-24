@@ -4,13 +4,13 @@
 
 .evil-section { 
     // wolf position
-    height: 605vh;
+    height: calc(var(--vh, 1vh) * 605);
     position: relative;  
     z-index: 1;
     
     &_container {
         // start of grinder camera roll down
-        height: 700vh; 
+        height: calc(var(--vh, 1vh) * 700); 
         // God, burn Safari
         overflow: clip;
         position: relative; 
@@ -18,9 +18,9 @@
 
     &_sticky {
         // start of sticky camera roll
-        height: 370vh;
+        height: calc(var(--vh, 1vh) * 370);
         position: sticky;
         // end of sticky camera roll - s/b in sync with head landing
-        top: -220vh;    
+        top: calc(var(--vh, 1vh) * -220);    
     }
 }  
