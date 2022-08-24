@@ -9,7 +9,7 @@
 
         &_item {
             display: block; 
-            height: 50vh;
+            height: calc(var(--vh, 1vh) * 50);
             width: 100%;        
             font-family: Outfit;  
             font-size: 1.8vh;

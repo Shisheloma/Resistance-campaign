@@ -6,7 +6,7 @@
         &_cover {
             position: relative;  
             height: 100%; 
-            width: 62vh; 
+            width: calc(var(--vh, 1vh) * 62); 
 
             &_background { 
                 height: 100%;
@@ -69,15 +69,18 @@
 
             &_subtitle {
                 height: 100%;
+                margin: auto; 
 
                 &_slider {
-                    margin: auto; 
+                    writing-mode: vertical-rl;
 
-                    &_text {
-                        margin: auto; 
+                    #splide02-list {
+                        display: flex;
+                        flex-direction: row; 
+                    }
+
+                    &_text { 
                         padding: 10px 0;
-                        display: block;
-                        writing-mode: vertical-rl;
                         transform: rotate(180deg);
                     }
                 }

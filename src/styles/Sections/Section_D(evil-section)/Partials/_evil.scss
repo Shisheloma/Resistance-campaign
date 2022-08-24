@@ -2,16 +2,16 @@
     .evil {
         position: absolute;
         top: 0;
-        bottom: 80vh;
+        bottom: calc(var(--vh, 1vh) * 80);
         left: 50%;
         transform: translateX(-50%);   
         z-index: 1;
 
         &_container {
             position: sticky;
-            height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
             top: 0;
-            bottom: 80vh;
+            bottom: calc(var(--vh, 1vh) * 80);
             display: grid;
             place-items: center;
         }

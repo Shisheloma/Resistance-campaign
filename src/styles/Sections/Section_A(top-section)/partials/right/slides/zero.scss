@@ -22,10 +22,10 @@
         }
         
         &.zero_slide_main {
-            background: url('../../assets/Sections/Top-section/stripes.webp') 0%/65vh 35vh;  
+            background: url('../../assets/Sections/Top-section/stripes.webp') 0%/calc(var(--vh, 1vh) * 65) calc(var(--vh, 1vh) * 35);  
 
             .zero_cover {
-                width: 63.68vh;
+                width: calc(var(--vh, 1vh) * 63.68);
                 margin: auto;
 
                 &_background {

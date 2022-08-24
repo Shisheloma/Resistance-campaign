@@ -1,10 +1,12 @@
+import { dvhString } from "../../../Common/dynamicHeight";
+
 import { keyframes } from "./keyframes"; 
 import { evil, evilContainer, panties, strokeInput, strokeInputLine, strokeOutput, textBottom, textLeft, textRight, wolf } from "./nodes";
 
 export const scrollResets = scroll => {
     wolf.classList.remove('hidden');
     if (scroll > keyframes[0] + 50) {  
-        wolf.style.transform = `translateY(-9vh)`;   
+        wolf.style.transform = `translateY(${dvhString(-9)})`;   
     }
     if (scroll > keyframes[1] || scroll < keyframes[10]) { 
         strokeInput.classList.remove('active');  
@@ -44,6 +46,6 @@ export const scrollResets = scroll => {
     }
 
     if (scroll < keyframes[8]) {
-        panties.style.transform = `translate(-50%, 31.7vh)`; 
+        panties.style.transform = `translate(-50%, ${dvhString(31.7)})`; 
     }
 };

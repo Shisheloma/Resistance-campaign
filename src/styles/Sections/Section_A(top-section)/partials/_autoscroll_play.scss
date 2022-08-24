@@ -3,7 +3,7 @@
         position: absolute;
         height: MIN(9.2vh, 85px);
         width: MIN(9.2vh, 85px);
-        top: 15vh;
+        top: calc(var(--vh, 1vh) * 15);
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;

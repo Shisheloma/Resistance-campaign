@@ -1,3 +1,5 @@
+import { dvhString } from "../../../../Common/dynamicHeight";
+
 import { keyframes } from "./keyframes";
 import { egg, escapeEgg, escapeSponsors, play, playTaskbar, video, videoElement } from "./nodes";
 
@@ -6,8 +8,8 @@ export const scrollActiveFrames = (scroll, direction) => {
 
     if (scroll > keyframes[0]) {  
         // width-height instead of scale used because of crhome scale - border-radius glitch
-        video.style.height = `${60 * scaleMin}vh`; 
-        video.style.width = `${44 * scaleMin}vh`;  
+        video.style.height = `${dvhString(60 * scaleMin)}`; 
+        video.style.width = `${dvhString(44 * scaleMin)}`;  
         videoElement.style.transform = `translate(-50%, -50%) scale(${scaleMin - 0.1})`;
         return
     }
@@ -16,8 +18,8 @@ export const scrollActiveFrames = (scroll, direction) => {
         
         // width-height instead of scale being used because of crhome scale/border-radius glitch
         const scaleVid = Math.max( Math.min(scaleMin + scale, 1), scaleMin); 
-        video.style.height = `${60 * scaleVid}vh`; 
-        video.style.width = `${44 * scaleVid}vh`;  
+        video.style.height = `${dvhString(60 * scaleVid)}`; 
+        video.style.width = `${dvhString(44 * scaleVid)}`;  
         
         const scaleElement = Math.max( Math.min(scaleMin + 2.5 * scale - 0.1, 1), scaleMin - 0.1); 
         videoElement.style.transform = `translate(-50%, -50%) scale(${scaleElement})`; 
@@ -46,8 +48,8 @@ export const scrollActiveFrames = (scroll, direction) => {
         return
     }
     if (scroll > keyframes[4]) {   
-        egg.style.transform = `translateY(75vh)`;  
-        escapeSponsors.style.top = `-6vh`;
+        egg.style.transform = `translateY(${dvhString(75)})`;  
+        escapeSponsors.style.top = `${dvhString(-6)}`;
     return
     }  
 };

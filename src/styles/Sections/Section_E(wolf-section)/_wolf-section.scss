@@ -1,18 +1,18 @@
 
 .wolf-section { 
-    height: 573vh; 
+    height: calc(var(--vh, 1vh) * 573); 
     pointer-events: none; 
 
     &_container {
-        height: 900vh;
+        height: calc(var(--vh, 1vh) * 900);
         position: relative;   
     }
 
     &_sticky { 
         position: sticky;
-        height: 220vh;   
+        height: calc(var(--vh, 1vh) * 220);   
         // sticky-scroll start - s/b in sync with bite (a lil bit later)
-        top: 45vh; 
+        top: calc(var(--vh, 1vh) * 45); 
     }
 
     .wolf {  
@@ -25,7 +25,7 @@
             height: 100%;        
             left: 50%;
             transform: translateX(-50%);
-            width: calc(220vh * 0.53); 
+            width: calc(var(--vh, 1vh) * 220 * 0.53); 
         }
 
         &_main { 
@@ -52,12 +52,12 @@
 
             &_left {
                 position: relative;  
-                transform: translate(40.5vh, 26vh) rotate(180deg); 
+                transform: translate(calc(var(--vh, 1vh) * 40.5), calc(var(--vh, 1vh) * 26)) rotate(180deg); 
             }
 
             &_right {
                 position: relative; 
-                transform: translate(66vh, -17vh) rotate(180deg);
+                transform: translate(calc(var(--vh, 1vh) * 66), calc(var(--vh, 1vh) * -17)) rotate(180deg);
             }
 
             &_bottom {
@@ -65,12 +65,12 @@
 
                 &_left {
                     position: relative;  
-                    transform: translate(50vh, 125vh) rotate(180deg); 
+                    transform: translate(calc(var(--vh, 1vh) * 50), calc(var(--vh, 1vh) * 125)) rotate(180deg); 
                 }
 
                 &_right {
                     position: relative; 
-                    transform: translate(52vh, 125vh) rotate(180deg);
+                    transform: translate(calc(var(--vh, 1vh) * 52), calc(var(--vh, 1vh) * 125)) rotate(180deg);
                 }
 
                 &.active {

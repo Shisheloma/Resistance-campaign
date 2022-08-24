@@ -6,8 +6,8 @@
             right: 0;
             top: 0;
             bottom: 0; 
-            height: 17vh;
-            width: 54vh;
+            height: calc(var(--vh, 1vh) * 17);
+            width: calc(var(--vh, 1vh) * 54);
             
             appearance: none;
             -webkit-appearance: none;
@@ -42,7 +42,7 @@
         }
 
         &_scroll { 
-            transform: rotate(-89deg) translate(-42%, -21vh);   
+            transform: rotate(-89deg) translate(-42%, calc(var(--vh, 1vh) * -21));   
             clip-path: polygon(2% 100%, 8% 100%, 25% 50%, 50% 50%, 75% 60%, 92% 100%, 100% 100%, 100% 0%, 2% 0%);
             
             &:focus  ~ .egg_video_scroll_label  { 
@@ -56,7 +56,7 @@
         }
 
         &_volume { 
-            transform: rotate(-91deg) translate(-42%, 10vh);      
+            transform: rotate(-91deg) translate(-42%, calc(var(--vh, 1vh) * 10));      
             clip-path: polygon(2% 0%, 8% 0%, 25% 50%, 50% 50%, 75% 40%, 92% 0%, 100% 0%, 100% 100%, 2% 100%); 
             
             &:focus  ~ .egg_video_volume_label  { 
@@ -73,8 +73,8 @@
             display: grid; 
             place-items: center;    
             position: absolute;
-            height: 57.6vh;
-            width: 42.4vh; 
+            height: calc(var(--vh, 1vh) * 57.6);
+            width: calc(var(--vh, 1vh) * 42.4); 
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); 

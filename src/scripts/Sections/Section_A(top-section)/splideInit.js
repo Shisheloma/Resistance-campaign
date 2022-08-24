@@ -14,7 +14,7 @@ export const splideInit = () => {
         pagination: false,
         drag: false, 
         direction: 'ttb',
-        height: '80vh', 
+        height: 'calc(var(--vh, 1vh) * 80)',  
         lazyLoad: 'sequential',
     });
       

@@ -1,3 +1,5 @@
+import { dvhString } from "../../../../Common/dynamicHeight";
+
 export const gauge = (className, classInstance = '', rotation = 0) => { 
     const gauge = document.querySelector(`.${className + classInstance}`); 
     if (document.querySelector(`.${className}_long`) === null) {
@@ -31,7 +33,7 @@ export const gauge = (className, classInstance = '', rotation = 0) => {
         const rotate = rotation + direction * (180  + angle/ 2 - i * (angle / (ticks - 1)));
         const x = width * Math.cos(rad(rotate)) / 2;
         const y = height * Math.sin(rad(rotate)) / 2; 
-        tick.style.transform = `translate(${x}vh, ${y}vh)  rotate(${rotate}deg)`; 
+        tick.style.transform = `translate(${dvhString(x)}, ${dvhString(y)})  rotate(${rotate}deg)`; 
         const isPeak = peaksIndecies.indexOf(i) !== -1; 
         if (isPeak) {
             tick.classList.add('egg_video_gauge_bar_peak'); 

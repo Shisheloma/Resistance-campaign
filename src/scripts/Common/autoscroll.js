@@ -73,7 +73,7 @@ export const autoscroll = () => {
             if (prevTimestamp === null) {
                 prevTimestamp = currentTimestamp;
             }
-            scrollY += distance * (currentTimestamp - prevTimestamp) / duration * speed; 
+            scrollY += distance * (currentTimestamp - prevTimestamp) / duration * speed * 1.2; 
             document.scrollingElement.scrollTop = scrollY; 
             prevTimestamp = currentTimestamp;
             window.requestAnimationFrame(step);
