@@ -17,10 +17,12 @@
 
         .news_modal_overlay {
             opacity: 1; 
+            transition: opacity 500ms;   
         }
 
         .news_modal_window {
             transform: none; 
+            transition: transform 1s;   
         }
     }
 
